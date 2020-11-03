@@ -28,5 +28,4 @@ class Expenses:
         self.expenses[id] = data
         self.save_all()
 
-
 expenses = Expenses()

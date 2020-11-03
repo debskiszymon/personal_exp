@@ -30,6 +30,5 @@ def expense_details(expense_id):
         return redirect(url_for("expenses_list"))
     return render_template("expense.html", form=form, expense_id=expense_id)
 
-
 if __name__ == "__main__":
     app.run(debug=True)
