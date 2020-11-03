@@ -28,4 +28,12 @@ class Expenses:
         self.expenses[id] = data
         self.save_all()
 
+    def total(self):
+        total = sum([expense['amount'] for expense in self.expenses])
+        return total
+
+    def delete(self, id):
+        self.expenses.pop(id)
+        self.save_all() 
+
 expenses = Expenses()
