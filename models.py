@@ -1,5 +1,6 @@
 import json
 
+
 class Expenses:
     def __init__(self):
         try:
@@ -25,11 +26,6 @@ class Expenses:
     def update(self, id, data):
         data.pop('csrf_token')
         self.expenses[id] = data
-        self.save_all()
-
-    def delete(self, id, data):
-        data.pop('csrf_token')
-        self.expenses[id].pop
         self.save_all()
 
 
